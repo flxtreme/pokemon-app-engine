@@ -1,0 +1,45 @@
+{
+  "name": "pokemon-app-engine",
+  "version": "1.0.0",
+  "description": "Simple pokemon api engine powered by pokeapi",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flxtreme/pokemon-app-engine.git"
+  },
+  "keywords": [
+    "pokemon",
+    "pokeapi",
+    "typescript",
+    "api",
+    "pokedex"
+  ],
+  "author": "flxrzjr@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flxtreme/pokemon-app-engine/issues"
+  },
+  "homepage": "https://github.com/flxtreme/pokemon-app-engine#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.13",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
