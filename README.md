@@ -4,7 +4,7 @@ A lightweight, type-safe TypeScript engine for fetching Pokémon data from the [
 
 ## Features
 
-- 🎯 **Fully Typed** - Complete TypeScript interfaces for all Pokémon data
+- 🎯 **Fully Typed** - TypeScript interfaces for all Pokémon data
 - 🚀 **Simple API** - Clean, intuitive methods for fetching Pokémon data
 - 📦 **Lightweight** - No dependencies, just native fetch
 - 🔄 **Pagination Support** - Built-in pagination for list endpoints
@@ -262,6 +262,29 @@ const pikachu = await engine.getSpeciesBy('pikachu');
 console.log(`Mew is legendary: ${mew.is_legendary}`); // true
 console.log(`Pikachu is legendary: ${pikachu.is_legendary}`); // false
 ```
+
+## For Developers
+
+### Running Tests
+
+Run the unit tests:
+
+```bash
+npm run test
+```
+
+### Development Setup
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Make your changes
+4. Run tests to ensure everything works:
+   ```bash
+   npm run test
+   ```
 
 ## Credits
 
