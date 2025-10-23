@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "test": "tsx test/main.ts"
+    "test": "tsx ./tests/main.ts"
   },
   "repository": {
     "type": "git",
