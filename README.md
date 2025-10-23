@@ -175,53 +175,6 @@ console.log(overgrow.effect_entries[0].short_effect);
 | `getGenerations()` | - | `Promise<PaginatedResponse<Raw>>` | Fetch all generations |
 | `get<T>(url)` | `string` | `Promise<T>` | Generic GET request |
 
-### Types
-
-#### GetPaginatedOptions
-```typescript
-interface GetPaginatedOptions {
-  offset?: number; // Starting position (default: 0)
-  limit?: number;  // Number of results (default: 20)
-}
-```
-
-#### PaginatedResponse
-```typescript
-interface PaginatedResponse<T = Raw> {
-  count: number;
-  next: string | null;
-  previous: string | null;
-  results: T[];
-}
-```
-
-## TypeScript Support
-
-All responses are fully typed. Import the types you need:
-
-```typescript
-import type { 
-  Pokemon, 
-  Species, 
-  PokemonType, 
-  Ability,
-  Raw,
-  PaginatedResponse 
-} from 'pokemon-app-engine';
-```
-
-## Error Handling
-
-All methods throw errors if the request fails:
-
-```typescript
-try {
-  const pokemon = await engine.getBy(999999);
-} catch (error) {
-  console.error('Failed to fetch Pokémon:', error.message);
-}
-```
-
 ## Examples
 
 ### Build a Pokédex
